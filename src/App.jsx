@@ -5,6 +5,7 @@ import imgWeddingBotanic from './assets/invitation_wedding_botanic.png'
 import imgBirthday from './assets/invitation_birthday.png'
 import imgWeddingGold from './assets/invitation_wedding_gold.png'
 import imgLavender from './assets/invitation_lavender.png'
+import logoHorizontal from './assets/bhalora_logo_horizontal_blanco.png'
 
 // Portafolio de Invitaciones con metadatos de características premium
 const portfolioItems = [
@@ -180,7 +181,9 @@ function App() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="navbar-logo">Elegancia Digital</div>
+          <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center' }}>
+            <img src={logoHorizontal} alt="Bhalora" style={{ height: '48px', display: 'block' }} />
+          </div>
           <div className="navbar-menu">
             <a href="#inicio" className="navbar-link">Inicio</a>
             <a href="#portafolio" className="navbar-link">Portafolio</a>
@@ -342,7 +345,7 @@ function App() {
                 ))}
               </ul>
               <a
-                href={`https://wa.me/5212223334455?text=Hola%20Bryan,%20me%20gustar%C3%ADa%20adquirir%20el%20paquete%20${pkg.name}%20de%20invitaciones%20digitales.`}
+                href={`https://wa.me/529671636739?text=Hola%20Bryan,%20me%20gustar%C3%ADa%20adquirir%20el%20paquete%20${pkg.name}%20de%20invitaciones%20digitales.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -363,7 +366,7 @@ function App() {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginTop: '2rem' }}>
           <a
-            href="https://wa.me/5212223334455?text=Hola%20Bryan,%20me%20gustar%C3%ADa%20cotizar%20una%20invitaci%C3%B3n%20digital."
+            href="https://wa.me/529671636739?text=Hola%20Bryan,%20me%20gustar%C3%ADa%20cotizar%20una%20invitaci%C3%B3n%20digital."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -372,7 +375,7 @@ function App() {
             <span style={{ fontSize: '1.2rem' }}>💬</span> WhatsApp
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/bhalo_ra?igsh=a2t2enc0Y3ZucjFx"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -381,7 +384,7 @@ function App() {
             <span style={{ fontSize: '1.2rem' }}>📸</span> Instagram
           </a>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/1DAaiSNUcz/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -389,14 +392,23 @@ function App() {
           >
             <span style={{ fontSize: '1.2rem' }}>📘</span> Facebook
           </a>
+          <a
+            href="mailto:bhalora428@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', padding: '0.85rem 2rem', textDecoration: 'none' }}
+          >
+            <span style={{ fontSize: '1.2rem' }}>✉️</span> Correo
+          </a>
         </div>
       </section>
 
 
 
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2026 Elegancia Digital - Invitaciones Interactivas Premium. Todos los derechos reservados.</p>
+      <footer className="footer" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+        <img src={logoHorizontal} alt="Bhalora Logo" style={{ height: '38px', opacity: '0.8' }} />
+        <p>© 2026 Bhalora - Invitaciones Interactivas Premium. Todos los derechos reservados.</p>
       </footer>
     </div>
   )
